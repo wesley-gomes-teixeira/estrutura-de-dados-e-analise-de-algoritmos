@@ -13,12 +13,10 @@ int main() {
 
    if (isalnum(c)) {
        printf("Verdadeiro, isso é uma letra ou um dígito\n");
-       resultado = 1;
+       return 1;
    } else {
        printf("Falso, isso não é uma letra ou um dígito\n");
-       resultado = 0;
+       return 0;
    }
 
-
-   return 0;
 }

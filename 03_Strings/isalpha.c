@@ -13,12 +13,10 @@ int main() {
 
    if (isalpha(c)) {
        printf("Verdadeiro, isso é uma letra\n");
-       resultado = 1;
+       return 1;
    } else {
        printf("Falso, isso não é uma letra\n");
-       resultado = 0;
+       return 0;
    }
 
-
-   return 0;
 }

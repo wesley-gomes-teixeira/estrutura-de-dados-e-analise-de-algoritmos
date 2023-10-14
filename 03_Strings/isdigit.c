@@ -13,12 +13,10 @@ int main() {
 
    if (isdigit(c)) {
        printf("Verdadeiro, isso é um codigo\n");
-       resultado = 1;
+       return 1;
    } else {
        printf("Falso, isso não é uma codigo\n");
-       resultado = 0;
+       return 0;
    }
 
-
-   return 0;
 }

@@ -13,12 +13,10 @@ int main() {
 
    if (isupper(c)) {
        printf("Verdadeiro, isso é uma letra maiúscula\n");
-       resultado = 1;
+       return 1;
    } else {
        printf("Falso, isso não é uma letra maiúscula\n");
-       resultado = 0;
+       return 0;
    }
 
-
-   return 0;
 }
