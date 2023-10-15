@@ -6,7 +6,7 @@
 #include <stdio.h> // Inclua a diretiva de inclusão para a biblioteca padrão de entrada e saída
 
 #define MAX_TAM 100
-
+//Professor aqui foi feito os exercicios 4 e 5 juntos 
 // Estrutura de dados para a pilha
 typedef struct {
     int topo;            // Índice do topo da pilha

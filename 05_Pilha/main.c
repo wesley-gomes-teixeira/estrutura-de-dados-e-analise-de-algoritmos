@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
+//Professor aqui foi feito os exercicios 1,2,3 juntos 
 #define TAMANHO_PILHA 10
 
 typedef struct {
