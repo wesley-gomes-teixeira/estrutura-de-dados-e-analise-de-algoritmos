@@ -3,23 +3,28 @@
 
 #include <stdbool.h>
 
+/* Estrutura de nó de uma lista duplamente encadeada circular */
 struct no {
   void *dado;
   struct no *ant, *prox;
 };
 
+/* Estrutura da lista duplamente encadeada circular */
 struct lista {
   struct no *cabeca;
   int tamanho;
 };
 
+/* Funções de criação e destruição da lista */
 struct lista *lista_criar(void);
 void lista_destruir(struct lista *lista);
 
+/* Funções de acesso aos elementos da lista */
 bool lista_vazia(struct lista *lista);
 int lista_tamanho(struct lista *lista);
 void *lista_obter_elemento(struct lista *lista, int indice);
 
+/* Funções de inserção e remoção de elementos na lista */
 int lista_inserir_inicio(struct lista *lista, void *dado);
 int lista_inserir_final(struct lista *lista, void *dado);
 int lista_inserir_posicao(struct lista *lista, void *dado, int indice);
@@ -28,6 +33,8 @@ int lista_remover_final(struct lista *lista);
 int lista_remover_posicao(struct lista *lista, int indice);
 
 #endif /* LISTA_H */
+
+----
 
 
 #include <stdio.h>
@@ -128,5 +135,5 @@ Facilidade de uso: A lista duplamente encadeada circular é uma estrutura de dad
 As desvantagens de usar uma lista duplamente encadeada circular para armazenar os alunos no código são:
 
 Uso de memória: A lista duplamente encadeada circular requer um nó adicional para representar o início e o fim da lista.
-Complexidade de implementação: A implementação de uma lista duplamente encadeada circular é um pouco mais complexa do que a 
-implementação de uma lista simplesmente encadeada.*/
+Complexidade de implementação: A implementação de uma lista duplamente 
+encadeada circular é um pouco mais complexa do que a implementação de uma lista simplesmente encadeada.*/
